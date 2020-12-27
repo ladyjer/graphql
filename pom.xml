@@ -8,4 +8,6 @@
     <artifactId>graphql-test</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <name>GraphQL Test</name>
+    <description>Ladyj GraphQL Test</description>
 </project>
