@@ -10,4 +10,8 @@
 
     <name>GraphQL Test</name>
     <description>Ladyj GraphQL Test</description>
+
+    <properties>
+        <java.version>11</java.version>
+    </properties>
 </project>
