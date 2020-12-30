@@ -3,3 +3,8 @@ INSERT INTO useless (message) VALUES
   ('More useless'),
   ('Even more useless'),
   ('Totally useless');
+
+INSERT INTO person (name) VALUES
+  ('Tim'),
+  ('Tom'),
+  ('Tam!');

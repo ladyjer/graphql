@@ -12,6 +12,16 @@ type Useless {
     message: String!
 }
 
+# Persone della famiglia
+type Person {
+
+    # ID univoco
+    id: ID!
+
+    # Nome della persona
+    name: String!
+}
+
 # Benvenuto nel mondo dell'inutilità più totale!
 type UselessWorld {
 
@@ -22,4 +32,7 @@ type UselessWorld {
         # N. pagina da consultare, si parte da 0
         offset: Int
     ): [Useless]!
+
+    # L'elenco completo delle persone della famiglia
+    persons : [Person]!
 }
