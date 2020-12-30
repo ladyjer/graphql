@@ -3,7 +3,6 @@ package eu.ladyj.api;
 import eu.ladyj.model.Useless;
 import eu.ladyj.service.UselessService;
 import org.apache.commons.collections4.IteratorUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
