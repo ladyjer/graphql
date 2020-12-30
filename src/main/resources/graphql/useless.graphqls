@@ -1,13 +1,25 @@
 schema {
-    query: Query
+    query: UselessWorld
 }
 
+# Un oggetto totalmente inutile
 type Useless {
+
+    # ID univoco
     id: ID!
+
+    # Una descrizione del perchè sia inutile
     message: String!
 }
 
-# The Root Query for the application
-type Query {
-    recentUseless(count: Int, offset: Int): [Useless]!
+# Benvenuto nel mondo dell'inutilità più totale!
+type UselessWorld {
+
+    # Un elenco di oggetti che non servono a niente
+    recentUseless(
+        # N. di cose inutili per pagina
+        count: Int,
+        # N. pagina da consultare, si parte da 0
+        offset: Int
+    ): [Useless]!
 }
