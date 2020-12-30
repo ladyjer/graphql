@@ -1,0 +1,13 @@
+schema {
+    query: Query
+}
+
+type Useless {
+    id: ID!
+    message: String!
+}
+
+# The Root Query for the application
+type Query {
+    recentUseless(count: Int, offset: Int): [Useless]!
+}
