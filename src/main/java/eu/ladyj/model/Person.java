@@ -1,16 +1,27 @@
 package eu.ladyj.model;
 
 import javax.persistence.*;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "PERSON")
 public class Person {
+    @Id
     private Integer id;
+
+    @Basic
     private String name;
 
-    @Id
-    @Column(name = "id")
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "love",
+            joinColumns = {@JoinColumn(name = "id_person")},
+            inverseJoinColumns = {@JoinColumn(name = "id_useless")})
+    public Set<Useless> loves;
+
     public Integer getId() {
         return id;
     }
@@ -19,8 +30,6 @@ public class Person {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "name")
     public String getName() {
         return name;
     }

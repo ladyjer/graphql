@@ -10,6 +10,9 @@ type Useless {
 
     # Una descrizione del perchè sia inutile
     message: String!
+
+    # Persone che adorano fare questa cosa inutile!
+    lovedby: [Person]!
 }
 
 # Persone della famiglia
@@ -20,6 +23,9 @@ type Person {
 
     # Nome della persona
     name: String!
+
+    # Cose inutili che questa persona ama fare
+    loves: [Useless]!
 }
 
 # Benvenuto nel mondo dell'inutilità più totale!
